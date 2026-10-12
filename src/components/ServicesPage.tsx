@@ -118,7 +118,8 @@ export default function ServicesPage() {
             <div className="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4">
               <Link
                 to="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-sm transition-all text-center flex-1 sm:flex-none"
+                style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                className="hover:brightness-110 active:scale-95 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md shadow-blue-500/20 transition-all text-center flex-1 sm:flex-none"
               >
                 Get a Free Custom Quote for Your Property Today
               </Link>
@@ -196,7 +197,8 @@ export default function ServicesPage() {
                 <div className="pt-2">
                   <Link 
                     to="/contact"
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-sm inline-flex items-center gap-2 transition-all active:scale-95"
+                    style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                    className="hover:brightness-110 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md shadow-blue-500/20 inline-flex items-center gap-2 transition-all active:scale-95"
                   >
                     <span>{s.cta}</span>
                     <ArrowRight className="w-4 h-4" />

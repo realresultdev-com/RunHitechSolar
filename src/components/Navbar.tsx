@@ -157,9 +157,10 @@ export default function Navbar() {
                     }}
                     className={`px-4 lg:px-5 py-2 rounded-full text-xs lg:text-sm font-bold tracking-tight transition-all duration-200 ${
                       isActive
-                        ? "bg-[#0B1E40] text-white shadow-xs"
-                        : "text-[#0B1E40] hover:text-blue-600 hover:bg-white/80"
+                        ? "text-white shadow-md shadow-blue-500/25"
+                        : "text-slate-800 hover:text-blue-600 hover:bg-white/80"
                     }`}
+                    style={isActive ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
                   >
                     {item.label}
                   </NavLink>
@@ -373,28 +374,29 @@ export default function Navbar() {
                     }}
                     className={`flex items-center justify-between p-3 rounded-2xl transition-all ${
                       isActive
-                        ? "bg-[#0B1E40] text-white font-bold shadow-sm"
+                        ? "text-white font-bold shadow-md shadow-blue-500/20"
                         : "text-slate-800 hover:bg-slate-100/80 active:bg-slate-200 font-semibold"
                     }`}
+                    style={isActive ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
                   >
                     <div className="flex items-center gap-3">
                       <div
                         className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${
-                          isActive ? "bg-white/15 text-amber-300" : "bg-blue-50 text-blue-600"
+                          isActive ? "bg-white/20 text-white" : "bg-blue-50 text-blue-600"
                         }`}
                       >
                         <Icon className="w-4 h-4" />
                       </div>
                       <div>
                         <div className="text-sm leading-snug">{item.label}</div>
-                        <div className={`text-[10px] ${isActive ? "text-slate-300" : "text-slate-400"}`}>
+                        <div className={`text-[10px] ${isActive ? "text-blue-100" : "text-slate-400"}`}>
                           {item.desc}
                         </div>
                       </div>
                     </div>
                     <ArrowRight
                       className={`w-4 h-4 transition-transform ${
-                        isActive ? "text-amber-300 translate-x-0.5" : "text-slate-400"
+                        isActive ? "text-white translate-x-0.5" : "text-slate-400"
                       }`}
                     />
                   </NavLink>
@@ -425,7 +427,7 @@ export default function Navbar() {
               <div className="pt-2">
                 <div className="p-3.5 rounded-2xl bg-gradient-to-br from-slate-900 to-blue-950 text-white flex items-center justify-between">
                   <div>
-                    <div className="text-xs font-bold flex items-center gap-1.5 text-amber-300">
+                    <div className="text-xs font-bold flex items-center gap-1.5 text-blue-300">
                       <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                       30-Year Warranty
                     </div>
@@ -434,7 +436,8 @@ export default function Navbar() {
                   <Link
                     to="/contact"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="bg-amber-400 hover:bg-amber-500 active:scale-95 text-slate-950 text-[11px] font-black px-3.5 py-2 rounded-xl shadow-sm transition-all"
+                    style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                    className="hover:brightness-110 active:scale-95 text-white text-[11px] font-bold px-3.5 py-2 rounded-xl shadow-md transition-all"
                   >
                     Free Survey
                   </Link>

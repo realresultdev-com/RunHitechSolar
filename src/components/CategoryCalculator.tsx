@@ -135,9 +135,10 @@ export default function CategoryCalculator() {
         <div className="inline-flex flex-wrap p-1.5 bg-slate-100 rounded-2xl gap-2 mb-6 sm:mb-8 border border-slate-200/90 shadow-xs">
           <button
             onClick={() => handleTabChange("residential")}
+            style={activeTab === "residential" ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
             className={`px-5 py-2.5 rounded-xl text-sm sm:text-base font-semibold transition-all cursor-pointer ${
               activeTab === "residential"
-                ? "bg-[#f97316] text-white shadow-md shadow-orange-500/25 font-bold"
+                ? "text-white shadow-md shadow-blue-500/25 font-bold"
                 : "text-slate-700 hover:text-slate-900 hover:bg-white/60 font-medium"
             }`}
           >
@@ -146,9 +147,10 @@ export default function CategoryCalculator() {
 
           <button
             onClick={() => handleTabChange("commercial")}
+            style={activeTab === "commercial" ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
             className={`px-5 py-2.5 rounded-xl text-sm sm:text-base font-semibold transition-all cursor-pointer ${
               activeTab === "commercial"
-                ? "bg-[#f97316] text-white shadow-md shadow-orange-500/25 font-bold"
+                ? "text-white shadow-md shadow-blue-500/25 font-bold"
                 : "text-slate-700 hover:text-slate-900 hover:bg-white/60 font-medium"
             }`}
           >
@@ -157,9 +159,10 @@ export default function CategoryCalculator() {
 
           <button
             onClick={() => handleTabChange("bulk")}
+            style={activeTab === "bulk" ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
             className={`px-5 py-2.5 rounded-xl text-sm sm:text-base font-semibold transition-all cursor-pointer ${
               activeTab === "bulk"
-                ? "bg-[#f97316] text-white shadow-md shadow-orange-500/25 font-bold"
+                ? "text-white shadow-md shadow-blue-500/25 font-bold"
                 : "text-slate-700 hover:text-slate-900 hover:bg-white/60 font-medium"
             }`}
           >

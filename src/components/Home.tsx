@@ -132,7 +132,8 @@ function HomeAssessmentForm() {
             <button
               type="submit"
               disabled={surveySuccess}
-              className="w-full bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-slate-950 font-bold text-sm px-4 py-3 rounded-xl transition-colors duration-150 shadow-sm active:scale-95 text-center flex items-center justify-center gap-1.5 cursor-pointer"
+              style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+              className="w-full hover:brightness-110 active:brightness-95 text-white font-bold text-sm px-4 py-3 rounded-xl transition-all duration-150 shadow-md shadow-blue-500/25 active:scale-95 text-center flex items-center justify-center gap-1.5 cursor-pointer"
             >
               {surveySuccess ? "Requested ✓" : "Request Free Call"}
             </button>
@@ -232,8 +233,8 @@ export default function Home() {
         .marquee-track:hover { animation-play-state:paused; }
 
         /* ── Button ── */
-        .btn-primary { background:linear-gradient(135deg,#fbbf24,#f59e0b); color:#0a0a12; font-weight:700; transition:all 0.3s ease; position:relative; overflow:hidden; }
-        .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(251,191,36,0.4); }
+        .btn-primary { background:oklch(0.55 0.24 267.88 / 1); color:#ffffff; font-weight:700; transition:all 0.3s ease; position:relative; overflow:hidden; }
+        .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(37,99,235,0.4); filter:brightness(1.08); }
         .btn-primary::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(255,255,255,0.2),transparent); opacity:0; transition:opacity 0.3s; }
         .btn-primary:hover::after { opacity:1; }
 
@@ -284,7 +285,7 @@ export default function Home() {
 
             {/* CTAs */}
             <div data-animate="fade-up" data-delay="300" className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-14">
-              <a href="#calculator" className="btn-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-amber-400/20">
+              <a href="#calculator" className="btn-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25">
                 <Calculator className="w-4 h-4 sm:w-5 sm:h-5" />
                 Calculate Savings
               </a>
@@ -355,7 +356,8 @@ export default function Home() {
               <div className="pt-2 sm:pt-4 flex flex-wrap gap-2.5 sm:gap-4">
                 <Link
                   to="/subsidy"
-                  className="bg-slate-950 hover:bg-slate-800 text-white font-bold text-xs px-5 sm:px-6 py-2.5 sm:py-3.5 rounded-xl shadow-sm transition-all text-center flex-1 sm:flex-none"
+                  style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                  className="hover:brightness-110 active:scale-95 text-white font-bold text-xs px-5 sm:px-6 py-2.5 sm:py-3.5 rounded-xl shadow-md shadow-blue-500/20 transition-all text-center flex-1 sm:flex-none"
                 >
                   Check Subsidy
                 </Link>

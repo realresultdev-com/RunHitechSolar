@@ -163,10 +163,11 @@
   --color-neon-cyan: #1E3A8A;   /* Primary Navy Blue */
   --color-neon-blue: #2563EB;   /* Slate Blue */
   --color-neon-purple: #D97706; /* Sunset Amber */
+  --color-brand-blue: oklch(0.55 0.24 267.88); /* Royal Blue Theme */
   
   --color-solar-400: #D97706;
   --color-solar-500: #1E3A8A;
-  --color-solar-600: #2563EB;
+  --color-solar-600: oklch(0.55 0.24 267.88);
   --color-solar-700: #0F172A;
 
   --color-dark-900: #ffffff;    /* Cards are white */

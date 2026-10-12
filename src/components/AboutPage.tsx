@@ -63,7 +63,8 @@ export default function AboutPage() {
             <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
               <Link
                 to="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-sm transition-all text-center flex-1 sm:flex-none"
+                style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                className="hover:brightness-110 active:scale-95 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md shadow-blue-500/20 transition-all text-center flex-1 sm:flex-none"
               >
                 Get Your Free Feasibility Survey & Quote Today
               </Link>

@@ -161,7 +161,8 @@ export default function MediaPage() {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
           <a
             href="#articles"
-            className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-sm transition-all text-center"
+            style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+            className="hover:brightness-110 active:scale-95 text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md shadow-blue-500/20 transition-all text-center"
           >
             Read the Latest Articles
           </a>
@@ -179,9 +180,10 @@ export default function MediaPage() {
             <button
               key={c.id}
               onClick={() => setSelectedCategory(c.id)}
+              style={selectedCategory === c.id ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 selectedCategory === c.id
-                  ? "bg-blue-600 text-white shadow-sm scale-105"
+                  ? "text-white shadow-md shadow-blue-500/20 scale-105"
                   : "bg-white text-slate-600 hover:bg-slate-100 border border-slate-200"
               }`}
             >

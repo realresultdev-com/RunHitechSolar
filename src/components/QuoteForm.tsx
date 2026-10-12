@@ -221,7 +221,8 @@ export default function QuoteForm() {
       <button
         type="submit"
         disabled={status === "loading" || status === "success"}
-        className="w-full rounded-xl bg-slate-900 hover:bg-slate-800 active:scale-[0.99] text-white font-bold py-3.5 text-sm sm:text-base tracking-tight shadow-sm transition-all disabled:opacity-60 cursor-pointer flex items-center justify-center gap-2"
+        style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+        className="w-full rounded-xl hover:brightness-110 active:scale-[0.99] text-white font-bold py-3.5 text-sm sm:text-base tracking-tight shadow-md shadow-blue-500/25 transition-all disabled:opacity-60 cursor-pointer flex items-center justify-center gap-2"
       >
         {status === "loading"
           ? "Submitting Request…"

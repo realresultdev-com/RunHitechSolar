@@ -99,9 +99,10 @@ export default function CategoryShowcase({ initialCategory = "residential" }: Ca
                 key={cat.id}
                 type="button"
                 onClick={() => setActiveTab(cat.id)}
+                style={isSelected ? { backgroundColor: "oklch(0.55 0.24 267.88 / 1)" } : undefined}
                 className={`px-5 py-2.5 rounded-xl text-sm sm:text-base font-semibold transition-all cursor-pointer ${
                   isSelected
-                    ? "bg-slate-900 text-white shadow-sm"
+                    ? "text-white shadow-md shadow-blue-500/20 font-bold"
                     : "text-slate-700 hover:text-slate-900 hover:bg-slate-300/40"
                 }`}
               >
@@ -162,7 +163,8 @@ export default function CategoryShowcase({ initialCategory = "residential" }: Ca
                 {current.ctaHref.startsWith("/") ? (
                   <Link
                     to={current.ctaHref}
-                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm sm:text-base transition-all shadow-sm active:scale-98 cursor-pointer"
+                    style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl hover:brightness-110 active:scale-98 text-white font-bold text-sm sm:text-base transition-all shadow-md shadow-blue-500/20 cursor-pointer"
                   >
                     <span>{current.ctaText}</span>
                     <ArrowRight className="w-4 h-4" />
@@ -170,7 +172,8 @@ export default function CategoryShowcase({ initialCategory = "residential" }: Ca
                 ) : (
                   <a
                     href={current.ctaHref}
-                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm sm:text-base transition-all shadow-sm active:scale-98 cursor-pointer"
+                    style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl hover:brightness-110 active:scale-98 text-white font-bold text-sm sm:text-base transition-all shadow-md shadow-blue-500/20 cursor-pointer"
                   >
                     <span>{current.ctaText}</span>
                     <ArrowRight className="w-4 h-4" />

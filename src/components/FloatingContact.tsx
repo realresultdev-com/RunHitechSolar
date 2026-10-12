@@ -9,7 +9,10 @@ export default function FloatingContact() {
         style={{ boxShadow: "0 10px 25px -5px rgba(0,0,0,0.12), 0 0 0 1px rgba(255,255,255,0.9) inset" }}
         aria-label="Call Run Hi Tech Solar"
       >
-        <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-amber-400 to-amber-500 text-slate-950 flex items-center justify-center shadow-xs shrink-0 group-hover:rotate-12 transition-transform">
+        <div 
+          style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+          className="w-7 h-7 rounded-full text-white flex items-center justify-center shadow-xs shrink-0 group-hover:rotate-12 transition-transform"
+        >
           <Phone className="w-3.5 h-3.5 fill-current" />
         </div>
         <span className="font-sans tracking-normal text-slate-900 font-bold hidden min-[440px]:inline">
