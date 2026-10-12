@@ -54,7 +54,7 @@ export default function ServicesPage() {
         "Lightning-Fast Setup: Your system is professionally installed and operational within 7 to 10 days."
       ],
       ideal: "💡 Best for: Individual houses, villas, and apartments.",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/Residential-Solar.jpg",
+      image: "/residential-solar.jpg",
       badge: "Govt Subsidy Eligible",
       cta: "Get a Free Custom Quote for Your Property Today"
     },
