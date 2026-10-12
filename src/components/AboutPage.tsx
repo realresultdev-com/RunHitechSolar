@@ -159,7 +159,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-[4/3]">
                 <img
-                  src="https://runhitechsolar.com/wp-content/uploads/2025/08/beautiful-alternative-energy-plant-with-solar-panels-scaled.jpg"
+                  src="/uploads/solar-plant-scaled.jpg"
                   alt="Solar alternative energy plant"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />

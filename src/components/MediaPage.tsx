@@ -28,7 +28,7 @@ export default function MediaPage() {
       categoryLabel: "Solutions • Namakkal HQ",
       date: "August 21, 2025",
       views: "3.4K Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-17.54.23.jpeg",
+      image: "/uploads/namakkal-temple.jpg",
       desc: "Looking for the best solar company in Namakkal? ☀️ Run Hi Tech Solar is your trusted partner for residential rooftop solar, industrial solar, and MW solar projects with PM Suryaghar Yojana 2025 subsidy benefits.",
       highlights: [
         "Save up to ₹30,000 – ₹50,000 per year on electricity bills with rooftop solar",
@@ -76,7 +76,7 @@ export default function MediaPage() {
       categoryLabel: "Subsidy Guide",
       date: "February 2026",
       views: "1.2K Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-16.50.26-890x664.jpeg",
+      image: "/uploads/subsidy-guide.jpg",
       desc: "Avoid common TANGEDCO paperwork traps. Learn the exact, step-by-step process to secure your ₹78,000 Direct Benefit Transfer (DBT) without delays.",
       highlights: [
         "Avoid common TANGEDCO paperwork traps and registration delays",
@@ -91,7 +91,7 @@ export default function MediaPage() {
       categoryLabel: "Regional Posters",
       date: "February 2026",
       views: "890 Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2026/02/Salem-Blog-Poster-890x664.jpg",
+      image: "/uploads/salem-poster.jpg",
       desc: "See what solar looks like in your own neighborhood. Browse real roof layouts, installation galleries, and setup configurations from local homes and businesses.",
       highlights: [
         "Real roof layouts and installation galleries across Salem, Karur & Namakkal",
@@ -106,7 +106,7 @@ export default function MediaPage() {
       categoryLabel: "Case Studies",
       date: "January 2026",
       views: "1.5K Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2026/02/karur-ads-poster-1-890x664.jpg",
+      image: "/uploads/karur-poster.jpg",
       desc: "Read the exact stories of how Tamil Nadu homeowners and HPCL petrol bunk operators permanently slashed their monthly EB bills to zero.",
       highlights: [
         "Real homeowner stories dropping monthly EB bills from ₹3,000+ to ₹200",
@@ -121,7 +121,7 @@ export default function MediaPage() {
       categoryLabel: "Industrial MW",
       date: "January 2026",
       views: "2.1K Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-16.50.27-890x664.jpeg",
+      image: "/uploads/mw-plant.jpg",
       desc: "Deep-dive insights for facility managers. Discover high-ROI strategies for Captive, Group Captive, and PPA solar plants, including grid integration and Tier-1 module selection.",
       highlights: [
         "High-ROI blueprints for Captive, Group Captive, and PPA solar plants",
@@ -136,7 +136,7 @@ export default function MediaPage() {
       categoryLabel: "Salem Hub",
       date: "February 2026",
       views: "640 Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2026/02/Salem-Blog-Poster-890x664.jpg",
+      image: "/uploads/salem-poster.jpg",
       desc: "Complete rooftop solar installation guide for Salem homeowners and businesses under the PM Surya Ghar government subsidy scheme with ₹78,000 direct bank subsidy.",
       highlights: [
         "Up to ₹78,000 government subsidy credited to bank",
@@ -151,7 +151,7 @@ export default function MediaPage() {
       categoryLabel: "Commercial MW",
       date: "January 2026",
       views: "1.1K Views",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-16.50.28-890x664.jpeg",
+      image: "/uploads/poster-extra.jpg",
       desc: "How industrial units in Coimbatore, Tirupur, Karur, and Salem protect their business from rising peak-hour TNEB tariffs with on-site solar plants.",
       highlights: [
         "Reduce operational overheads by up to 70%",

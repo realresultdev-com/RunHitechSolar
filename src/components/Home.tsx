@@ -707,7 +707,7 @@ export default function Home() {
               <div>
                 <div className="h-44 sm:h-48 overflow-hidden relative">
                   <img
-                    src="https://runhitechsolar.com/wp-content/uploads/2026/02/Salem-Blog-Poster-840x1050.jpg"
+                    src="/uploads/salem-poster.jpg"
                     alt="Best Solar Company in Salem"
                     loading="lazy"
                     decoding="async"
@@ -731,7 +731,7 @@ export default function Home() {
               <div>
                 <div className="h-44 sm:h-48 overflow-hidden relative">
                   <img
-                    src="https://runhitechsolar.com/wp-content/uploads/2026/02/karur-ads-poster-1-840x1050.jpg"
+                    src="/uploads/karur-poster.jpg"
                     alt="Best Solar Company in Karur"
                     loading="lazy"
                     decoding="async"
@@ -755,7 +755,7 @@ export default function Home() {
               <div>
                 <div className="h-44 sm:h-48 overflow-hidden relative">
                   <img
-                    src="https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-17.54.23-840x857.jpeg"
+                    src="/uploads/namakkal-temple.jpg"
                     alt="Best Solar Company in Namakkal"
                     loading="lazy"
                     decoding="async"
@@ -779,7 +779,7 @@ export default function Home() {
               <div>
                 <div className="h-44 sm:h-48 overflow-hidden relative">
                   <img
-                    src="https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-16.50.27-840x857.jpeg"
+                    src="/uploads/mw-plant.jpg"
                     alt="MW Solar Power Plant in Tamil Nadu"
                     loading="lazy"
                     decoding="async"

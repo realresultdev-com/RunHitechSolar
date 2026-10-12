@@ -67,7 +67,7 @@ export default function ServicesPage() {
         "Proven Track Record: Trusted by over 350+ HPCL petrol bunks solarized across Tamil Nadu."
       ],
       ideal: "💡 Best for: Petrol bunks, hotels, schools, hospitals & grocery supermarkets.",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/🏢-Commercial-Solar-copy.jpg",
+      image: "/commercial-solar.jpg",
       badge: "350+ Bunks Solarized",
       cta: "Get a Free Custom Quote for Your Property Today"
     },
@@ -81,7 +81,7 @@ export default function ServicesPage() {
         "Demonstrated Scale: Over 10+ MW of industrial solar plants successfully commissioned across the state."
       ],
       ideal: "💡 Best for: Textile mills, foundries, poultry farms, paper mills & factories.",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/MW-Solar-Projects-copy.jpg",
+      image: "/uploads/mw-plant.jpg",
       badge: "10+ MW Installed",
       cta: "Get a Free Custom Quote for Your Property Today"
     },
@@ -95,7 +95,7 @@ export default function ServicesPage() {
         "Total Security: Safely handle grid power cuts and easily power your nighttime electricity needs with stored solar energy."
       ],
       ideal: "💡 Best for: Homes, clinics, and businesses that need non-stop power.",
-      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/🌗-Hybrid-Solar-copy.jpg",
+      image: "/solar_hybrid.jpg",
       badge: "Non-Stop Power",
       cta: "Get a Free Custom Quote for Your Property Today"
     }
@@ -135,7 +135,7 @@ export default function ServicesPage() {
           <div className="relative flex items-center justify-center p-2 sm:p-4">
             <div className="relative w-full max-w-[480px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 bg-slate-900 group">
               <img
-                src="https://runhitechsolar.com/wp-content/uploads/2021/01/solar-system-2939560-scaled.jpg"
+                src="/uploads/solar-plant-scaled.jpg"
                 alt="Run Hi Tech Solar Rooftop Solar System"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

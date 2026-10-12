@@ -56,7 +56,7 @@ export default function SocialAdPopup() {
           className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 border border-slate-200 shadow-sm group bg-slate-900"
         >
           <img
-            src="https://runhitechsolar.com/wp-content/uploads/2025/08/Residential-Solar.jpg"
+            src="/residential-solar.jpg"
             alt="Run Hi Tech Solar Reel"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 opacity-90"
           />
