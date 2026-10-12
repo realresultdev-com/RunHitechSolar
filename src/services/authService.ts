@@ -1,6 +1,6 @@
 import { saveAdminUser, getActiveAdminSession, clearAdminSession } from "./dbService";
 
-export const GOOGLE_CLIENT_ID = "1081442493959-9kfrfuh0vgrlg683h1a3v8siq9vop1sa.apps.googleusercontent.com";
+export const GOOGLE_CLIENT_ID = "733264162015-0hg93u9us4giemvbvuhihi41605f6s3u.apps.googleusercontent.com";
 
 export type UserRole = "admin" | "customer";
 
