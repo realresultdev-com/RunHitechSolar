@@ -454,7 +454,10 @@ export default function Home() {
               className="bg-slate-50/80 border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:bg-slate-50 hover:border-slate-300 hover:shadow-sm transition-all"
             >
               <div>
-                <div className="w-11 h-11 rounded-xl bg-slate-900 text-white font-bold text-sm flex items-center justify-center mb-5 shadow-xs">
+                <div 
+                  style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                  className="w-11 h-11 rounded-xl text-white font-bold text-sm flex items-center justify-center mb-5 shadow-md shadow-blue-500/25"
+                >
                   01
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">Free Consultation</h3>
@@ -471,7 +474,10 @@ export default function Home() {
               className="bg-slate-50/80 border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:bg-slate-50 hover:border-slate-300 hover:shadow-sm transition-all"
             >
               <div>
-                <div className="w-11 h-11 rounded-xl bg-slate-900 text-white font-bold text-sm flex items-center justify-center mb-5 shadow-xs">
+                <div 
+                  style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                  className="w-11 h-11 rounded-xl text-white font-bold text-sm flex items-center justify-center mb-5 shadow-md shadow-blue-500/25"
+                >
                   02
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">Custom Design</h3>
@@ -488,7 +494,10 @@ export default function Home() {
               className="bg-slate-50/80 border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:bg-slate-50 hover:border-slate-300 hover:shadow-sm transition-all"
             >
               <div>
-                <div className="w-11 h-11 rounded-xl bg-slate-900 text-white font-bold text-sm flex items-center justify-center mb-5 shadow-xs">
+                <div 
+                  style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                  className="w-11 h-11 rounded-xl text-white font-bold text-sm flex items-center justify-center mb-5 shadow-md shadow-blue-500/25"
+                >
                   03
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">Expert Install</h3>
@@ -505,7 +514,10 @@ export default function Home() {
               className="bg-slate-50/80 border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:bg-slate-50 hover:border-slate-300 hover:shadow-sm transition-all"
             >
               <div>
-                <div className="w-11 h-11 rounded-xl bg-slate-900 text-white font-bold text-sm flex items-center justify-center mb-5 shadow-xs">
+                <div 
+                  style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                  className="w-11 h-11 rounded-xl text-white font-bold text-sm flex items-center justify-center mb-5 shadow-md shadow-blue-500/25"
+                >
                   04
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">Start Saving</h3>

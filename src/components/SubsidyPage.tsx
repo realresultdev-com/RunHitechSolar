@@ -136,7 +136,10 @@ export default function SubsidyPage() {
           {/* 3 kW+ */}
           <div className="bg-white p-7 sm:p-8 rounded-3xl border-2 border-slate-900 shadow-md hover:shadow-lg transition-all relative flex flex-col justify-between font-sans">
             <div className="absolute top-6 right-6">
-              <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white bg-slate-900 px-3 py-1 rounded-full shadow-xs">
+              <span 
+                style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white px-3 py-1 rounded-full shadow-xs"
+              >
                 MAX SUBSIDY
               </span>
             </div>

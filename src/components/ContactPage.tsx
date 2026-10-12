@@ -128,7 +128,8 @@ export default function ContactPage() {
               href="https://maps.app.goo.gl/QUT6naDzq9AMAvvf6"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold px-5 py-3 rounded-xl shadow-sm transition-all flex items-center gap-2 shrink-0 active:scale-98"
+              style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+              className="hover:brightness-110 text-white text-xs sm:text-sm font-bold px-5 py-3 rounded-xl shadow-md shadow-blue-500/20 transition-all flex items-center gap-2 shrink-0 active:scale-98"
             >
               <Navigation className="w-4 h-4" />
               <span>Get Directions ↗</span>
