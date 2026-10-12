@@ -6,13 +6,14 @@ import { ArrowRight, Share2, BookOpen, X } from "lucide-react";
 interface MediaPost {
   id: string;
   title: string;
-  category: "All" | "Subsidy" | "Engineering" | "Posters";
+  category: "All" | "Subsidy" | "Engineering" | "Posters" | "Solutions";
   categoryLabel: string;
   date: string;
   views: string;
   image: string;
   desc: string;
   highlights: string[];
+  fullSections?: { heading: string; body: string }[];
 }
 
 export default function MediaPage() {
@@ -20,6 +21,54 @@ export default function MediaPage() {
   const [selectedPost, setSelectedPost] = useState<MediaPost | null>(null);
 
   const posts: MediaPost[] = [
+    {
+      id: "best-solar-company-in-namakkal",
+      title: "Best Solar Company in Namakkal – Run Hi Tech Solar | PM Suryaghar Yojana 2025",
+      category: "Solutions",
+      categoryLabel: "Solutions • Namakkal HQ",
+      date: "August 21, 2025",
+      views: "3.4K Views",
+      image: "https://runhitechsolar.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-17.54.23.jpeg",
+      desc: "Looking for the best solar company in Namakkal? ☀️ Run Hi Tech Solar is your trusted partner for residential rooftop solar, industrial solar, and MW solar projects with PM Suryaghar Yojana 2025 subsidy benefits.",
+      highlights: [
+        "Save up to ₹30,000 – ₹50,000 per year on electricity bills with rooftop solar",
+        "Direct central government subsidy up to ₹78,000 credited to bank under PM Suryaghar Yojana",
+        "Engineered 3 kW & 5 kW residential systems with seamless TANGEDCO net-metering approvals",
+        "Industrial rooftop solar designed for Namakkal poultry farms, rice mills, and logistics hubs",
+        "MW-scale Captive, Group Captive & PPA solar power plants with 3 to 4 year complete ROI",
+        "Local service network headquartered at Jedarpalayam Main Road, Paramathi Velur, Namakkal"
+      ],
+      fullSections: [
+        {
+          heading: "🌟 Introduction",
+          body: "Looking for the best solar company in Namakkal? Run Hi Tech Solar is your trusted EPC partner for residential rooftop solar, industrial solar, and MW solar projects. With the PM Suryaghar Yojana 2025 solar subsidy, Namakkal families can now install solar systems at affordable prices and reduce electricity bills by up to 90%."
+        },
+        {
+          heading: "✅ Why Choose Solar in Namakkal?",
+          body: "Namakkal is one of Tamil Nadu's fastest-growing towns with high electricity consumption across homes, rice mills, poultry farms, and logistics hubs. By installing a rooftop solar system in Namakkal, you save ₹30,000 to ₹50,000 annually, enjoy uninterrupted power supply, and increase property valuation."
+        },
+        {
+          heading: "🏠 Residential Solar & PM Suryaghar Yojana",
+          body: "A 3 kW system is ideal for small to medium families, while a 5 kW system caters to larger households with heavy AC and motor usage. Run Hi Tech Solar guides Namakkal homeowners through online registration, site survey, Tier-1 panel installation, and bi-directional net-meter sync."
+        },
+        {
+          heading: "🏭 Industrial Solar (Poultry Farms & Rice Mills)",
+          body: "Namakkal is famous for its thriving poultry farms, rice mills, and transport hubs. These commercial establishments face high EB bills. Industrial rooftop solar helps businesses save lakhs annually, claim 40% accelerated depreciation tax benefits, and recoup full investment within 3–4 years."
+        },
+        {
+          heading: "⚡ MW Solar Power Plants near Namakkal",
+          body: "For energy-intensive industries such as textile mills, cement plants, and feed manufacturers, Run Hi Tech Solar designs and executes MW-scale solar farms under Captive, Group Captive, and Power Purchase Agreement (PPA) models — allowing enterprises to generate their own power or access green energy without initial capital outlay."
+        },
+        {
+          heading: "🔧 Local After-Sales & Maintenance Support",
+          body: "From automated panel cleaning to quarterly inverter maintenance and 24/7 localized breakdown support across Namakkal, Paramathi Velur, Tiruchengode, and Rasipuram, we guarantee 25+ years of peak performance."
+        },
+        {
+          heading: "💬 Homeowner Review: Mr. Mohan Kumar, Namakkal",
+          body: "“We installed a 3kW rooftop solar system in our Namakkal home through Run Hi Tech Solar. Their team explained everything clearly about the PM Suryaghar Yojana subsidy, helped us with the paperwork, and completed the installation on time. Now, our monthly EB bill has reduced by almost 90%! We strongly recommend Run Hi Tech Solar to anyone in Namakkal looking for solar.”"
+        }
+      ]
+    },
     {
       id: "pm-surya-ghar-subsidy-guide",
       title: "The PM Surya Ghar Subsidy Guide",
@@ -114,6 +163,7 @@ export default function MediaPage() {
 
   const categories = [
     { id: "All", label: "All Media" },
+    { id: "Solutions", label: "Solutions" },
     { id: "Subsidy", label: "Govt Subsidy" },
     { id: "Engineering", label: "Engineering & MW" },
     { id: "Posters", label: "Regional Posters" }
@@ -304,6 +354,22 @@ export default function MediaPage() {
                 {selectedPost.desc}
               </p>
 
+              {/* Full Article Sections if available */}
+              {selectedPost.fullSections && selectedPost.fullSections.length > 0 && (
+                <div className="space-y-4 pt-1">
+                  {selectedPost.fullSections.map((sec, idx) => (
+                    <div key={idx} className="bg-slate-50/80 rounded-2xl p-4 sm:p-5 border border-slate-200/80 space-y-1.5">
+                      <h4 className="text-xs sm:text-sm font-bold text-slate-900 tracking-tight">
+                        {sec.heading}
+                      </h4>
+                      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed whitespace-pre-line">
+                        {sec.body}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <div className="bg-slate-50 rounded-2xl p-4 sm:p-5 border border-slate-200/80 space-y-2.5">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800 font-sans">
                   Key Takeaways & Benefits:
@@ -318,7 +384,8 @@ export default function MediaPage() {
               <div className="pt-3 flex flex-col sm:flex-row items-center gap-3">
                 <Link
                   to="/contact"
-                  className="w-full sm:flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center text-xs sm:text-sm font-bold py-3.5 px-6 rounded-xl shadow-sm transition-all"
+                  style={{ backgroundColor: "oklch(0.55 0.24 267.88 / 1)" }}
+                  className="w-full sm:flex-1 hover:brightness-110 active:scale-95 text-white text-center text-xs sm:text-sm font-bold py-3.5 px-6 rounded-xl shadow-md shadow-blue-500/20 transition-all"
                   onClick={() => setSelectedPost(null)}
                 >
                   Request Survey for This Solution
